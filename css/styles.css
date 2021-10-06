@@ -63,3 +63,10 @@ body{
 .modal-content {
     color:#0f0f0f;
 }
+
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
