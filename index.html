@@ -89,12 +89,105 @@
                 </div>
                 <div class="col-12 col-sm align-self-center">  
                     <a role="button" class="btn btn-block nav-link btn-warning"
-                    data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
+                    data-toggle="modal" data-target="#loginModal2"
                     data-placement="bottom" href="#reserveform">Reserve Table</a>
                                            
                 </div>
             </div>
         </div>
+
+
+
+        
+
+
+
+
+
+        <div id="loginModal2" class="modal fade row row-content align-items-center col-12 col-sm-8" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">  
+               <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Reserve a Table</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                           <div>
+                                <label for="firstname" class="col-md-2 col-form-label">Number of<br> Guests</label>
+    
+                                <input type="radio" id="contactChoice1"
+                                 name="contact" value="email">
+                                <label for="contactChoice1">1</label>
+                            
+                                <input type="radio" id="contactChoice2"
+                                 name="contact" value="phone">
+                                <label for="contactChoice2">2</label>
+                            
+                                <input type="radio" id="contactChoice3"
+                                 name="contact" value="mail">
+                                <label for="contactChoice3">3</label>
+            
+                                <input type="radio" id="contactChoice1"
+                                 name="contact" value="email">
+                                <label for="contactChoice1">4</label>
+                            
+                                <input type="radio" id="contactChoice2"
+                                 name="contact" value="phone">
+                                <label for="contactChoice2">5</label>
+                            
+                                <input type="radio" id="contactChoice3"
+                                 name="contact" value="mail">
+                                <label for="contactChoice3">6</label>            
+                            </div>
+                            <br>
+    
+                            <div>
+                                <label for="firstname" class="col-md-2 col-form-label">Section</label>
+    
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-success">Non-Smoking</button>
+                                    <button type="button" class="btn btn-danger">Smoking</button>
+                                    
+                                  </div>
+                            </div>
+                            <br>
+    
+                            <div class="form-group row">
+                                <label for="telnum" class="col-md-2 col-form-label">Date and<br> Time</label>
+                                <div class="col-5 col-md-4">
+                                    <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Date">
+                                </div>
+                                <div class="col-7 col-md-4">
+                                    <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Time">
+                                </div>
+                                
+                            </div>
+                            
+                        <div class="form-group row "col-sm-2 col-form-label> 
+                            <button type="button" class="btn btn-light"></button>
+                            <button type="button" class="btn btn-light"></button>
+                            <button type="button" class="btn btn-light"></button>
+                            <button type="button" class="btn btn-light"></button>
+                            <button type="button" class="btn btn-light"></button>
+                            <button type="button" class="btn btn-light"></button>
+
+                            <button type="button" class="btn btn-secondary">Cancel</button> 
+                            <button type="button" class="btn btn-light"></button>                     
+                        <button type="button" class="btn btn-primary">Reserve</button>
+                        </div>
+                        </form>
+                   </div>
+               </div>
+            </div>           
+        </div>
+
+
+
+
+
+
+
     </header>
 
     <div class="container"> 
@@ -305,6 +398,12 @@
 
 
                     <div class="form-group row "col-sm-2 col-form-label> 
+                        <button type="button" class="btn btn-light"></button>
+                        <button type="button" class="btn btn-light"></button>
+                        <button type="button" class="btn btn-light"></button>
+                        <button type="button" class="btn btn-light"></button>
+                        <button type="button" class="btn btn-light"></button>
+                       
                         
                         <button type="button" class="btn btn-primary">Reserve</button>
                         </div>  
@@ -375,9 +474,7 @@
    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
    <script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-    });
+ 
 </script>
 </body>
 </html>
