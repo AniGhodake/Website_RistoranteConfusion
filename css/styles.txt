@@ -38,7 +38,9 @@ body {
   padding: 10px; }
 
 .carousel {
-    background:#512DA8; }
+  background: linear-gradient(
+-135deg
+, #c850c0, #4158d0); }
   .carousel .carousel-item {
     height: 300px; }
     .carousel .carousel-item img {
@@ -53,6 +55,9 @@ body {
   bottom: 0px;
   z-index: 1; }
 
-  .modal-content {
-    color:#0f0f0f;
+.modal-header {
+  background-color:#512DA8 ;
+}
+.modal-body {
+  background-color:#9575CD ;
 }
