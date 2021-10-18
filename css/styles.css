@@ -56,3 +56,11 @@ body {
   .modal-content {
     color:#0f0f0f;
 }
+
+.modal-header {
+ background-color: #9575CD;
+}
+
+.modal-content {
+ background-color: #bdaadd;
+}
